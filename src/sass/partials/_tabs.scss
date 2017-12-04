@@ -1,0 +1,42 @@
+.tab-area {
+	margin: 80px 0px 100px;
+	.tab-head {
+		padding: 0px 15px;
+		ul {
+			margin: 0; padding: 0; font-size: 0; display: table; width: 100%; border-bottom: 2px solid #4196e6;
+			li {
+				list-style-type: none; display: table-cell; font-size: 18px; text-transform: uppercase;
+				padding: 7px 0px; text-align: center; font-weight: 300; cursor: pointer; border: 2px solid #fff; border-bottom: 0; 
+				&.active {border: 2px solid #4196e6; border-bottom: 0; border-radius: 5px 5px 0px 0px;}
+			}
+		}
+	}
+	.content {
+		margin-top: 30px;
+		.single {
+			display: none;
+			img {width: 100%;}
+			h3 {font-size: 20px; margin-top: 0px;}
+			p {line-height: 22px;}
+			//.col-md-6 {&:first-child {padding-left: 0;}}
+			&:first-child {display: block;}
+		}
+		@include myclearfix();
+	}
+}
+
+.gen-cta {
+	background: $baseColor; color: #fff; border-radius: 5px; text-transform: uppercase; margin-top: 20px;
+	padding: 12px 20px; font-weight: 700; letter-spacing: 1px; font-size: 14px; display: table; border: 0;
+}
+
+@media screen and (max-width: 992px){
+	.tab-area {
+		.content {.single {.col-md-6 {&:first-child {margin-bottom: 15px;}}}}
+	}
+}
+
+@media screen and (max-width: 520px){
+	.tab-area .tab-head ul li {font-size: 14px;}
+	.tab-area .content .single h3 {font-size: 18px;}
+}

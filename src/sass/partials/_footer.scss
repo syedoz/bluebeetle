@@ -1,0 +1,24 @@
+.footer {
+	width: 100%; background: $baseColor; color: #fff; padding: 70px 0px 50px;
+	h3 {margin-top: 0;}
+	.foo-form {width: 100%;}
+	.txt-single {
+		width: 50%; float: left; padding-right: 15px;
+		label {display: block; font-weight: normal;}
+		input {
+			width: 100%; border-radius: 5px; border: 0; background: #52a5eb; padding: 8px 10px;
+			&::-webkit-input-placeholder {color: #ffffff8c;}
+			&::-moz-placeholder {color: #ffffff8c;}
+			&:-ms-input-placeholder {color: #ffffff8c;}
+			&:-moz-placeholder {color: #ffffff8c;}
+			&:focus {outline: 0;}
+		}
+	}
+	.foo-cta {@extend .gen-cta; background: #fff; color: $baseColor; padding: 11px 20px 8px; margin-top: 10px; font-size: 13px;}
+}
+
+@media screen and (max-width: 786px){
+	.footer {
+		.txt-single {width: 100%; margin: 10px 0px;}
+	}
+}

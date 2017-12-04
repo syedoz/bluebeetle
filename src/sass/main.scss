@@ -1,0 +1,21 @@
+/* Moiz's Sass Template 1.2 */
+
+/* Grids */
+@import "bootstrap/bootstrap";
+
+/* @includes */
+@import "variables";
+@import "mixins";
+@import "theme";
+
+/* Plugins */
+@import "vendors/owl/owl.carousel";
+
+/* Partials */
+@import "partials/hamburger";
+@import "partials/intro";
+@import "partials/gridSection";
+@import "partials/tabs";
+@import "partials/footer";
+/*==================== Page wise CSS ===================*/
+/*======================================================*/

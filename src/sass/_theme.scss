@@ -1,0 +1,22 @@
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	color: $fontColor;
+}
+html {height: 100%;}
+
+/* Defaults */
+.clearfix {display: block; clear: both;}
+.img-full {img{width: 100%;}}
+.alpha {padding-left: 0px;}
+.omega {padding-right: 0px;}
+.show-mobile {display: none;}
+.hide-mobile {display: block;}
+.col-center {float: none; margin: auto;}
+
+a{&:focus,&:hover {outline: none; text-decoration: none;}}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+// @include font-face('arabic', 'GE_Dinar_One_Medium', 'arabic', '.otf','regular');

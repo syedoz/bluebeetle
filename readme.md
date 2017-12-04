@@ -18,9 +18,9 @@ http://syedmoizali.com/bluebeetle
 
 To run in development mode install all the prerequesties and run following commands.
 
-"Grunt Build" to build solution and generate assests.
-"Grunt Watch" to start listening to JS and CSS changes.
-"Grunt imagemin" to minify images.
+* "Grunt Build" to build solution and generate assests.
+* "Grunt Watch" to start listening to JS and CSS changes.
+* "Grunt imagemin" to minify images.
 
 
 ## Built with

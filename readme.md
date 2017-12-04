@@ -25,6 +25,7 @@ To run in development mode install all the prerequesties and run following comma
 
 ## Built with
 
+* Bootstrap (base framrwork)
 * Grunt (For task automation)
 * SASS (CSS PreProcessor)
 * Imagemin (For image minification)

@@ -1,17 +1,24 @@
 .footer {
 	width: 100%; background: $baseColor; color: #fff; padding: 70px 0px 50px;
-	h3 {margin-top: 0;}
+	h2 {font-weight: 400; font-size: 24px; margin: 0px 0px 10px;}
 	.foo-form {width: 100%;}
 	.txt-single {
-		width: 50%; float: left; padding-right: 15px;
-		label {display: block; font-weight: normal;}
+		width: 49%; float: left; margin-right: 1%; position: relative;
+		@include myclearfix();
+		&:nth-child(2) {margin: 0px 0px 0px 1%}
+		label {display: block; font-weight: normal; margin-bottom: 5px;}
 		input {
-			width: 100%; border-radius: 5px; border: 0; background: #52a5eb; padding: 8px 10px;
+			width: 100%; border-radius: 5px; border: 0; background: #52a5eb; padding: 8px 10px; color: #fff;
 			&::-webkit-input-placeholder {color: #ffffff8c;}
 			&::-moz-placeholder {color: #ffffff8c;}
 			&:-ms-input-placeholder {color: #ffffff8c;}
 			&:-moz-placeholder {color: #ffffff8c;}
 			&:focus {outline: 0;}
+			&[name="email"] {&.valid{background: url(../images/tick.png) no-repeat #52a5eb; background-size: 23px; background-position: 98% 6px;}}
+		}
+		label.error {
+			position: absolute; top: -3px; right: 5px; background: #d40a5c;
+			padding: 6px 15px 4px; font-size: 12px; border-radius: 4px 4px 0px 0px;
 		}
 	}
 	.foo-cta {@extend .gen-cta; background: #fff; color: $baseColor; padding: 11px 20px 8px; margin-top: 10px; font-size: 13px;}
@@ -19,6 +26,9 @@
 
 @media screen and (max-width: 786px){
 	.footer {
-		.txt-single {width: 100%; margin: 10px 0px;}
+		.txt-single {
+			width: 100%; margin: 10px 0px;
+			&:nth-child(2) {margin: 10px 0px;}
+		}
 	}
 }

@@ -30,9 +30,9 @@
 	}
 	.content {
 		padding: 0px 60px;
-		h2 {}
-		h3 {font-size: 20px;}
-		p {line-height: 22px;}
+		h2 {margin: 0; font-weight: 400; margin-bottom: 10px;}
+		h3 {}
+		p {line-height: 22px; margin-bottom: 20px; a {text-decoration: underline; color:#000;}}
 	}
 	.grid-carousel {
 		margin: 120px 0px 100px;
@@ -80,6 +80,6 @@
 				}
 			}
 		}
-		.content {padding: 15px; h2 {font-size: 22px;}}
+		.content {padding: 15px;}
 	}
 }

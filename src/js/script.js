@@ -17,7 +17,22 @@ $(document).ready(function(){
 	    }
 	});
 
-	var tabs = $('.tab-head li');
+	$('#fooform').validate({
+	    rules: {
+	        name: {
+	            required: true,
+	        },
+	        email: {
+	            required: true,
+	            email: true
+	        }
+	    },
+	    submitHandler: function (form) {
+	        return false;
+	    }
+	});
+
+	var tabs = $('#tabs li');
 	tabs.click(function(){
 		var tabVal = $(this).attr('data-val');
 		var tabCont = $('#tabCont .single');
@@ -28,8 +43,8 @@ $(document).ready(function(){
 		$('#tabCont .single[data-val='+tabVal+']').show();
 	})
 
-	$('.hamb').click(function(){
+	$('#hamb').click(function(){
 		$(this).toggleClass('open');
-		$( ".site-nav" ).stop().slideToggle( "slow" );
+		$( ".site-nav" ).stop().slideToggle( "fast" );
 	})
 });

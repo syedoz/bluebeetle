@@ -1,4 +1,4 @@
-.hamb {
+#hamb {
 	display: none; float: right;
 	width: 35px;
   height: 45px;
@@ -33,39 +33,39 @@
 	}
 }
 
-.hamb span:nth-child(1) {
+#hamb span:nth-child(1) {
   top: 0px;
 }
 
-.hamb span:nth-child(2),.hamb span:nth-child(3) {
+#hamb span:nth-child(2),#hamb span:nth-child(3) {
   top: 11px;
 }
 
-.hamb span:nth-child(4) {
+#hamb span:nth-child(4) {
   top: 22px;
 }
 
-.hamb.open span:nth-child(1) {
+#hamb.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-.hamb.open span:nth-child(2) {
+#hamb.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.hamb.open span:nth-child(3) {
+#hamb.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
-.hamb.open span:nth-child(4) {
+#hamb.open span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;

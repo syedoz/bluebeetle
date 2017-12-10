@@ -1,6 +1,6 @@
 .intro {
 	background: url(../images/banner.jpg) no-repeat; background-size: cover; height: 100%; overflow: hidden;
-	header {@include myclearfix(); margin: 20px 0px; position: relative; z-index: 10;}
+	header {@include myclearfix(); margin: 20px 0px;}
 	.logo {
 		width: 20%; float: left;
 		img {width: 100%;}
@@ -16,23 +16,24 @@
 	}
 	.container {height: 100%;}
 	.content {
-		text-align: center; height: 100%; width: 100%; display: table; position: relative; top: -65px;
+		text-align: center; height: 100%; width: 100%; display: table; margin-top: -65px;
 		.inner {vertical-align: middle; display: table-cell;}
-		h1 {text-transform: uppercase; font-weight: 700; font-size: 72px;}
-		h2 {font-weight: 300; font-size: 35px;}
+		h1 {text-transform: uppercase; font-weight: 700; font-size: 72px; margin: 0;}
+		h2 {font-weight: 300; font-size: 35px; margin: 0;}
 	}
 }
 
 @media screen and (max-width: 786px){
-	.hamb {display: block;}
+	#hamb {display: block;}
 	.intro {
 		.logo {width: 30%;}
 		.site-nav {
-			position: absolute; right: 0; background: #ffffff59; padding: 20px; top: 40px; display: none;
+			position: absolute; right: 0; background: #000; padding: 5px 0px; top: 60px; display: none;
 			width: 100%; text-align: center;
 			li {
-				display: block; margin-bottom: 10px;
-				a {padding: 0;}
+				display: block; padding: 10px 0px; border-bottom: 1px solid #1d1d1d; font-size: 14px;
+				&:last-child {border: 0;}
+				a {padding: 0; color: #fff;}
 			}
 		}
 		.content {

@@ -19,6 +19,7 @@ h1,h2,h3,h4,h5,p {margin: 0;}
 h2 {font-size: 35px;}
 h3 {font-weight: 400; margin-bottom: 10px; font-size: 20px;}
 a{&:focus,&:hover {outline: none; text-decoration: none;}}
+input {-webkit-appearance:none;}
 
 @media screen and (max-width: 786px){
 	h2 {font-size: 22px;}
